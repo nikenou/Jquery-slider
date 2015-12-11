@@ -1,0 +1,22 @@
+{
+  "name": "simple slider",
+  "version": "3.2",
+  "title": "simple Slider",
+  "author": {
+    "name": "nikenou"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/nikenou/Jquery-slider"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">=1.7"
+  },
+  "description": "This is a simple slider.",
+  "keywords": [
+    "slider",
+    "effect"
+  ]
+}

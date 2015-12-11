@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Oli前端CSS</title>
+<link href="basic.css" rel="stylesheet" type="text/css" />
+<link href="../slider.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="script/jquery.min.js"></script>
+<script type="text/javascript" src="../slider.pack.js"></script>
+<script type="text/javascript">
+//页面加载所需函数
+$(document).ready(function(){
+	/* start: 调用slider幻灯片插件 */
+	//浮现样式
+	$("#slider_01").fadeSlider({
+		controlsShow : true, //是否显示数字导航
+		effect : 1, //1表示浮现,2表示滑动
+        speed : 500, //滑动速度
+        auto : true, //是否自定滑动
+        pause : 3000, //两次滑动暂停时间持
+        height : 0, //容器高度，不设置自动获取图片高度
+        width : 0//容器宽度，不设置自动获取图片宽度						 
+	});
+	//水平滑动方式
+	$("#slider_02").fadeSlider({
+		controlsShow : true, //是否显示数字导航
+		effect : 2, //1表示浮现,2表示滑动
+        speed : 500, //滑动速度
+        auto : true, //是否自定滑动
+        pause : 3000, //两次滑动暂停时间持
+        height : 0, //容器高度，不设置自动获取图片高度
+        width : 0//容器宽度，不设置自动获取图片宽度						 
+	});
+	/* end */	
+})
+</script>
+</head>
+
+<body>
+<!-- start: 幻灯片 -->
+<div class="area_sliderArea area">
+	<div class="titlebar area_titlebar">
+		<h2>幻灯片</h2>
+	</div>
+	<div class="content">
+		<h3 class="content_title">图片浮现</h3>
+		<code>
+			/* start: 调用slider幻灯片插件 */<br />
+			//浮现样式<br />
+			$("#slider_01").fadeSlider({<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;controlsShow: true, //是否显示数字导航<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;effect: 1, //1表示浮现,2表示滑动<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;speed: 500, //滑动速度<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;auto: true, //是否自定滑动<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;pause: 3000, //两次滑动暂停时间持<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;height: 0, //容器高度，不设置自动获取图片高度<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;width: 0//容器宽度，不设置自动获取图片宽度<br />						 
+			});<br />
+			/* end */
+		</code>
+		<span class="blank10"></span>
+		<div style="width: 320px; background-color: #f7f7f7; padding: 10px; overflow: hidden; ">
+			<div id="slider_01" class="slider">
+				<ul>
+					<li><a href="#"><img border="0" class="loading" alt="高分汇编：历年中考语文修改病句试题精选" src="http://cp.gaofen.com/cptoftp/2012/01/20120131023602420.jpg" /></a><h3><a href="#">8月28日起可查水平测成绩</a></h3></li>
+					<li><a href="#"><img border="0" class="loading" alt="初三生寒假提升：九年级政治同步解析" src="http://cp.gaofen.com/cptoftp/2012/01/20120113105746361.jpg" /></a><h3><a href="#">读美国文理学院不比哈佛差</a></h3></li>
+					<li><a href="#"><img border="0" class="loading" alt="2013年广州体育中考中长跑成必考项目" src="http://cp.gaofen.com/cptoftp/2012/01/20120129103232917.jpg" /></a><h3><a href="#">新学年初三必知的4件大事</a></h3></li>
+					<li><a href="#"><img border="0" class="loading" alt="2012年中考英语满分作文必备句型100例" src="http://cp.gaofen.com/cptoftp/2012/01/20120112025616221.jpg" /></a><h3><a href="#">如何面对高一新生活</a></h3></li>
+					<li><a href="#"><img border="0" class="loading" alt="2012寒假接力：初中语文同步复习训练" src="http://cp.gaofen.com/cptoftp/2012/01/thumb_320_240_20120111111308862.jpg" /></a><h3><a href="#">如何面对高一新生活</a></h3></li>
+				</ul>
+				<div class="slider_bar"></div>
+			</div>
+		</div>	
+		<span class="blank10"></span>
+		<h3 class="content_title">图片水平滑动</h3>
+		<code>
+			/* start: 调用slider幻灯片插件 */<br />
+			//浮现样式<br />
+			$("#slider_02").fadeSlider({<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;controlsShow: true, //是否显示数字导航<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;effect: 2, //1表示浮现,2表示滑动<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;speed: 500, //滑动速度<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;auto: true, //是否自定滑动<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;pause: 3000, //两次滑动暂停时间持<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;height: 0, //容器高度，不设置自动获取图片高度<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;width: 0//容器宽度，不设置自动获取图片宽度<br />						 
+			});<br />
+			/* end */
+		</code>
+		<span class="blank10"></span>
+		<div style="width: 320px; background-color: #f7f7f7; padding: 10px; overflow: hidden; ">	
+			<div id="slider_02" class="slider">
+				<ul>
+					<li><a href="#"><img border="0" class="loading" alt="高分汇编：历年中考语文修改病句试题精选" src="http://cp.gaofen.com/cptoftp/2012/01/20120131023602420.jpg" /></a><h3><a href="#">8月28日起可查水平测成绩</a></h3></li>
+					<li><a href="#"><img border="0" class="loading" alt="初三生寒假提升：九年级政治同步解析" src="http://cp.gaofen.com/cptoftp/2012/01/20120113105746361.jpg" /></a><h3><a href="#">读美国文理学院不比哈佛差</a></h3></li>
+					<li><a href="#"><img border="0" class="loading" alt="2013年广州体育中考中长跑成必考项目" src="http://cp.gaofen.com/cptoftp/2012/01/20120129103232917.jpg" /></a><h3><a href="#">新学年初三必知的4件大事</a></h3></li>
+					<li><a href="#"><img border="0" class="loading" alt="2012年中考英语满分作文必备句型100例" src="http://cp.gaofen.com/cptoftp/2012/01/20120112025616221.jpg" /></a><h3><a href="#">如何面对高一新生活</a></h3></li>
+					<li><a href="#"><img border="0" class="loading" alt="2012寒假接力：初中语文同步复习训练" src="http://cp.gaofen.com/cptoftp/2012/01/thumb_320_240_20120111111308862.jpg" /></a><h3><a href="#">如何面对高一新生活</a></h3></li>
+				</ul>
+				<div class="slider_bar"></div>
+			</div>		
+		</div>
+	</div>
+</div>
+<!-- end: 幻灯片 -->
+</body>
+</html>

@@ -1,0 +1,94 @@
+﻿@charset "utf-8";
+/*
+优化时间:2012-1-29
+作者:ouli 
+*/
+
+/** 全局样式 **/
+
+/** 设置默认样式 **/
+* html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+
+
+/** 旧版本HTML元素清除内外边距 **/
+body,div,p,h1,h2,h3,h4,h5,h6,/* 结构元素 */
+dl,dt,dd,ul,ol,li,/* 列表元素 */
+pre,caption,blockquote,/* 文本格式元素 */
+table,td,tr,th,/* 表格元素 */
+form,fieldset,input,button,select,label,textarea/* 表单元素 */{
+	padding:0;
+	margin:0;
+}
+
+
+/** HTML5元素初始化 **/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+	display: block;
+}
+audio, canvas, video {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+
+/** 设置默认字体 **/
+body { background: #ffffff; text-align: center; color: #333; font: 12px "宋体" ,Arial; }
+table,td,tr,th{ font-size: 12px;}
+h1,h2,h3,h4,h5,h6 { font-size: 12px; font-weight: normal; }
+
+
+/** 重置列表元素 **/
+ol,ul,li{ list-style: none; }
+
+
+/** 去掉默认图片链接边框 **/
+img{ border: none; }
+ 
+ 
+/** 重置文本格式元素 **/
+a { color: #333333; text-decoration: none; }
+a:hover { color: #ba2636; text-decoration: underline; }
+a:focus { outline: none; }
+a:active { color: #333333; }
+
+
+/** 控制模块上下距离 **/
+.blank3 { height: 3px; overflow: hidden; display: block; }
+.blank5 { height: 5px; overflow: hidden; display: block; }
+.blank6 { height: 6px; overflow: hidden; display: block; }
+.blank8 { height: 8px; overflow: hidden; display: block; }
+.blank10 { height: 10px; overflow: hidden; display: block; }
+
+
+/** 加载中图片 **/
+.loading { background: url(../img/loading.gif) no-repeat center center; }
+
+
+/** 水平虚线 **/
+.dottedLIne { display: block; background: url(../images/bg/line.gif) repeat-x; height: 1px; margin: 0; padding: 0; line-height: 1px; overflow: hidden; clear: both; }
+
+
+/**	分隔符号	**/
+.sym { background: url(../img/icon_all.gif) no-repeat 0 -299px; padding-left: 1px; margin: 0 10px; _display: inline-block; _margin-top: 6px; }
+
+
+/**	清除浮动	**/
+.clearfix:after { content: "."; display: block; height: 0; font-size: 0; clear: both; visibility: hidden; }.clearfix { display: inline-block; }/* Hides from IE-mac \*/* html .clearfix { height: 1%; }.clearfix { display: block; }/* End hide from IE-mac */
+
+
+/** 左浮动和右浮动 **/
+.fl { float:left; }
+.fr { float:right; }
+
+/** margin **/
+.ml5 { margin-left: 5px; }
