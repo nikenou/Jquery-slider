@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/** 个性化定义 **/
+body { font-family: Arial, Helvetica, sans-serif; }
+/* @end */
+
+.area { width: 960px; margin: 0 auto; text-align: left; }
+
+
+/** 基本容器定义 **/
+.area_namespace,.area_summary,.area_btn,.area_form,.area_icon,.area_layout,.area_textList,.area_dlList,.area_imgText,.area_imgList,.area_pageList,.area_commentList,.area_tabArea,.area_countdown,.area_addFavorite,.area_hoverMenu,.area_bubble,.area_sliderArea,.area_floatMenu,.area_fixBox,.area_loadImg,.area_popWindow,.area_stored,area_form { padding: 10px; border: 1px solid #ccc; }
+.area .area_titlebar h2 { font-size: 30px; margin-bottom: 10px; }
+.mod_titlebar { line-height: 25px; }
+.content p { margin: 2px 0; line-height: 20px; }
+.content_title { line-height: 25px; color: #105095; font-size: 14px; font-weight: 700; }
+code { display: inline-block; background: #f7f7f7; padding: 5px; border: 1px dashed #ddd; }
+/* @end */
+
+
+/**
+  * @name : slider
+  * @author	: ouli
+  * @description : 轮换图片幻灯片模块
+  */
+.slider { position: relative; overflow: hidden; }
+.slider ul { width: 100%; }
+.slider ul li { width: 100%; overflow: hidden }
+.slider .slider_bar { width: 100%; background: #000; overflow: hidden; }
+.slider li h3 { color: #FFF; overflow: hidden; }
+.slider .slider_navNum { overflow: hidden; }
+.slider .slider_navNum span { display: inline; float: left; overflow: hidden; text-align: center; }
+/* @end */
+
+/** 幻灯片模块 **/
+#slider_01 { height: 238px; }
+#slider_01 li { height: 238px; }
+#slider_01 li img { width: 320px; height: 240px; display: block; }
+#slider_01 .slider_bar { z-index: 1; position: absolute; background: #000; height: 34px; bottom: 0; filter: Alpha(Opacity=50); opacity: 0.5; }
+#slider_01 li h3 { display: none; position: absolute; bottom: 0; left: 8px; z-index: 5; width: 200px; height: 34px; line-height: 34px; font-size: 14px; font-weight: 700; text-indent: 0px; color: #fff; }
+#slider_01 li h3 a, #slider_01 li h3 a:hover { color: #fff; text-decoration: none; }
+#slider_01 .slider_navNum { z-index: 3; position: absolute; height: 15px; bottom: 9px; right: 8px; }
+#slider_01 .slider_navNum span { background: #5a6363; width: 18px; height: 15px; margin-right: 1px; color: #fff; cursor: pointer; }
+#slider_01 .slider_navNum span.on { background: #ff8803; color: #fff; }
+
+#slider_02 { height: 238px; }
+#slider_02 li { height: 238px; }
+#slider_02 li img { width: 320px; height: 240px; display: block; }
+#slider_02 .slider_bar { z-index: 1; position: absolute; background: #000; height: 34px; bottom: 0; filter: Alpha(Opacity=50); opacity: 0.5; }
+#slider_02 li h3 { display: none; position: absolute; bottom: 0; left: 8px; z-index: 5; width: 200px; height: 34px; line-height: 34px; font-size: 14px; font-weight: 700; text-indent: 0px; color: #fff; }
+#slider_02 li h3 a, #slider_02 li h3 a:hover { color: #fff; text-decoration: none; }
+#slider_02 .slider_navNum { z-index: 3; position: absolute; height: 15px; bottom: 9px; right: 8px; }
+#slider_02 .slider_navNum span { background: #5a6363; width: 18px; height: 15px; margin-right: 1px; color: #fff; cursor: pointer; }
+#slider_02 .slider_navNum span.on { background: #ff8803; color: #fff; }
+/* @end */
